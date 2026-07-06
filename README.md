@@ -48,3 +48,19 @@ viji-university-portal/
 └── README.md                # System documentation
 
 ```
+## ▶️ Run Application (Local Setup)
+
+### 1️⃣ Start Backend
+```bash
+cd srm-v6/backend
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
+```
+### 2️⃣ Start Frontend (New Terminal)
+```bash
+cd srm-v6/frontend
+npm install
+npm run dev
+```
